@@ -1,0 +1,138 @@
+#header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 50px;
+    background-color: #101930;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.6);
+    z-index: 999;
+    position: sticky;
+    top: 0;
+    left: 0;
+
+}
+
+#navbar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#navbar li{
+    list-style: none;
+    padding: 15px;
+    position: relative;
+}
+
+#navbar li a{
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    color: rgb(5, 160, 238);
+    transition: 0.3s ease;
+    
+}
+
+#navbar li a:hover,
+#navbar li a.active{
+   
+    color: chocolate;
+}
+
+#navbar li a.active::after,
+#navbar li a:hover::after{
+    content: "";
+    width: 30%;
+    height: 2px;
+    background: chocolate;
+    position: absolute;
+    bottom: -4px;
+    left: 20px;
+
+}
+
+/* Home Page */
+#hero{
+    background-image: url("images/background/background_4.jpg");
+    height: 90vh;
+    width: 100%;
+    background-size: cover;
+    background-position: top 25% right 0;
+    background-attachment: scroll;
+}
+.text_box{
+    padding: 50px 80px;
+    justify-content: center;
+}
+
+#hero h4{
+    padding-top: 50px;
+    padding-bottom: 5px;
+}
+
+
+#hero h1{
+    color: coral;
+    padding-bottom: 5px ;
+}
+p{
+    color: rgb(130, 74, 1);
+}
+
+
+#hero button{
+    background-image: url("images/buy_now/button_3.jpg");
+    background-color:transparent;
+    background-size: cover;
+    background-position: center;
+    mix-blend-mode: multiply;
+    cursor: pointer;
+    border: none;
+    color: rgb(0, 0, 0);
+    border: 0;
+    padding: 14px 80px 14px 65px;
+    background-repeat: no-repeat;
+}
+
+.section_p1{
+    padding: 40px 80px;
+
+}
+
+#feature .fe-box{
+    background-color: antiquewhite;
+    width: 180px;
+    text-align: center;
+    padding: 25px 15px;
+    box-shadow: 20px 20px 34px rgba(0, 0, 0, 0.5);
+    border: none;
+    cursor: pointer;
+    border-radius: 100px;
+    margin: 15px 0;
+
+}
+
+#feature .fe-box:hover{
+    box-shadow: 10px 10px 54px rgba(0, 0, 0, 0.1);
+}
+
+#feature .fe-box img{
+    margin-bottom: 10px;
+}
+
+#feature .fe-box h6{
+    
+    padding: 9px 8px 6px 8px ;
+    line-height: 1;
+    border-radius: 4px;
+    color: rgb(0, 0, 0);
+    background-color: rgb(239, 191, 151);
+}
+
+#feature{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+}
